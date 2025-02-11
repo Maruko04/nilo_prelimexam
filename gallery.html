@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding-top: 80px; 
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            background: #333;
+            padding: 15px 20px;
+            width: 80%;
+            border-radius: 10px;
+            justify-content: center;
+            gap: 15px;
+            opacity: 0.9;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+        .container {
+            background: #333;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 1000px; 
+            max-width: 6000 px; 
+            margin: 100px auto; 
+        }
+        .thumbnail {
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            margin: 0 5px;
+            }
+
+            .thumbnail:hover {
+                border: 2px solid #555;
+            }
+
+            .thumbnail.selected {
+                border: 2px solid #fff;
+            }
+
+            .thumbnails {
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+            }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; 
+            object-fit: cover; 
+        }
+        .thumbnail {
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+        .thumbnail:hover {
+            border: 2px solid #555;
+        }
+        .thumbnail.selected {
+            border: 2px solid #fff;
+        }
+        .thumbnails {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="niloaboutme.html">About Me</a>
+        <a href="taken1.html">Subject Taken</a>
+        <a href="enrolled.html">Subject Currently Enrolled</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="favorites.html">My Favorites</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="container">
+        <h2>Ronie Gallery</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-6/474232328_9425367544160974_7947793880424436683_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGyyLU-kiyK-m1-AsE2od9eMPNRoFpyFbQw81GgWnIVtDp82jNivXKN-Z1BoqgJe-sk60DQIpEvLDA5Sj1jTu3p&_nc_ohc=q5wLbGpCiVYQ7kNvgHzuDDo&_nc_oc=Adh1LsUkQOB1mluVIMXeT4an79LbL-njIfshT9UpBTMH89fxY-ut8qfzSMDcOl_4Qdw&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=AYPpu6hbkFUY6W0QL-DjY0S&oh=00_AYAiHgbaM9QD2k68fLkMMeVl7m-V2cn9guZrdJWZrRoL_Q&oe=67B16B59" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-6/396555985_7089544967743255_1572361344609923160_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFhrvUXgVa0vk3qRAM_epfKewwDE98QLfF7DAMT3xAt8TY8udYagoLq575rz_ixZ7kN5zCDTfHmZ2YH9Ef7RuWu&_nc_ohc=LBxP7LYJ0T0Q7kNvgHqFM2v&_nc_oc=AdjOa1QRoydfscE4npzvMOG1YzECBlIdM_ZKrfOcoMb1gijaxQryOTxwvFfpnpm_Sdw&_nc_zt=23&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=Avkpy5xg0kzUXOlbvus124x&oh=00_AYCf1nLso1Gb9WS0kzhz_DwyN4dkrDDEBOOCNUmYNi5WOg&oe=67B15213" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.6435-9/72559292_2764064773613212_5029914355865485312_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExzW-GeKqxyyuMoUYWenD1oZ5Oc0kDC5uhnk5zSQMLm2TlP9TB1XQw3anDa9PX2eH6CkBrLWAQmAuv284JCoz_&_nc_ohc=Wky1fygvzt8Q7kNvgFxDSUw&_nc_oc=Adi6nzgdC1NJTTm_G00a0RSNFWHB4p_pWu9oxDsedEmgBUYOMOqJNd7ut0Ob_nBdr7w&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=AoUoeFGlcqCMpC6PTUewDf-&oh=00_AYD2VSbVobEcRL4x2tOZauRS34mGnk47nfGQ5ER9lnLGaQ&oe=67D30633" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/72402129_2764064713613218_2106212521273720832_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGxks-73BAGGq2wgZfyqDWxi1a0UWfvuj2LVrRRZ--6Pci_-iSX0Pn9YdNeq9nNmdjHMIuiDUXh3IdVlATunJ52&_nc_ohc=6clYSPJUbOEQ7kNvgEg_B7G&_nc_oc=Adj1f9VS5uEcpHxWveSVElO7l53R-edEFMEUkAmlWCrjlwZd88lGScT4wC_2qSl4g50&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AntRFnvKEI9H2QcWS53rvFn&oh=00_AYDxLse7RHPYWE4t09qmg3gIZKZRfrswcQ2QpgfhLzBNbw&oe=67D2FE01" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/72566206_2764064670279889_4702315819852365824_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH6eMPOCvltYcJWiPjyxfLZZ621Y8nUllBnrbVjydSWUFQP7e5kBU_OXzJE_cWukXBy4A-dtNpq6cwSF4KKAKgy&_nc_ohc=Bns2GxxCr9kQ7kNvgHhpGhx&_nc_oc=AdjmECePLpYMUlFoZEWVAUnO2yO8M6sPApEbo82yW-LQ4yda6hUOUyAGj6FiLfTBxkE&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AGCr35XMt1OvOLrzc5K6BCF&oh=00_AYBx0t1Hwe33jvxb6tFGmr_y8gHO6iHZLaAN83lnqzW9KQ&oe=67D2F358" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/72421849_2764064626946560_2538745986025521152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGZB8zAbF0ZsyXIBpG49gBGd92nVdo-Qjx33adV2j5CPMYLznXHY87IjnojCedMe8VOPNF4knL9ROGxumvXh99l&_nc_ohc=_rPeReYHBVQQ7kNvgHVOqXA&_nc_oc=AdgDkZ3Tz0gtsdjaHepNEKZgY0S3-t35v-XmPIWXSkq9JyOkFzK-RzDq3xqmCpp4OD8&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=Aaf5s6S5-wNTWVK5g5WY7it&oh=00_AYBjG7auT4HOmhxrCmF4D5E-Y_IlT_e8kGhtnUfge5sflw&oe=67D2F1A9" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/69817210_2674153562604334_7736998690249768960_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEV6yE9B2tl2zBD0rQzg2hXZ6gHOeP5kKFnqAc54_mQoaLWv7DZCZyhzFjv5vVVQrM_HE2S3JsfzfDjXq7bpG1b&_nc_ohc=5mlxNqFTK0oQ7kNvgHq2z_Q&_nc_oc=AdhjwnM2wYL-9rhetyZsIyoPt8Ve-g9AIvoW1KkAYbCMdZl7FZyNlulidZi9VMDtBgQ&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AdG9nwSgEpPRXqkPDYnR9eV&oh=00_AYBGNHo-DZzgaNmV0tVMdu8jM4IGHBkJkn2kNbvCyWeiRQ&oe=67D30194" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.6435-9/72555140_2764064533613236_389081830373982208_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFrmNKsj5j8EwgsiMP3b3-SgfxpzDurAFiB_GnMO6sAWOjaJ2W3aeUKQ1E02u41ADEvhVVFAAlJM7us7CJsgxIV&_nc_ohc=nFpexiNTjSMQ7kNvgFyl5zJ&_nc_oc=AdhWhmrzi1hRYXiLPqu9g6sQJIP1-ibzlsfxLvKujCoVZ6Cw9yqF_UstcPiNtsbYHY0&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=AqxfDWeG9thgiTmX3LUgBrZ&oh=00_AYCIxah41OHF-RhrTpLL_bj6tSdrE7m1FM9T_gsNmiyUOQ&oe=67D30365" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.6435-9/72405163_2749552015064488_8597045202416304128_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEEZZzeWRLgjlLP5T2r2VIj5X8irkICOMjlfyKuQgI4yNBLnbLIEvEqreqJDi0GNrpzkk5AFRu8L72MD16EKgr6&_nc_ohc=VyWK5o70opYQ7kNvgG5vSk8&_nc_oc=AdhOjwp5CGJiQjRiYCJgi5P0s5GG-pRQO9iOk4N7sg2J5D2zdc4ypcP3jGsIiArA790&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=A7GIQKY3gFj20iWW20z2gxo&oh=00_AYBdMsEsN4bGHbkhuHpeaGBZSS7sUqhwrrYCcJfspllZUw&oe=67D2E14C" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.6435-9/72077458_2749551945064495_9051972441965854720_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFJk-ap2x0NV4RbPA46LGXM5vJ3YQ2JAyDm8ndhDYkDIBYfyroxZH2jAV6F4JcSslGAY0-yhNLfnAqL6aLRAfto&_nc_ohc=dOyPqPm0Wr8Q7kNvgGlb4dW&_nc_oc=AdgiQFyy7l4webHVayVVJdttqDNH6m7Vp1dPYypPavSMU51VfZzxkK8b6uEJiAJqkBo&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_gid=ALZmxTmPZd-hnqX2-78Ahsc&oh=00_AYBqdytDQotiHBdMkaA6j2-bILdDIbBVyVU7lfJwIILOuA&oe=67D2DD5A" class="d-block">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="thumbnails">
+            <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-6/474232328_9425367544160974_7947793880424436683_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGyyLU-kiyK-m1-AsE2od9eMPNRoFpyFbQw81GgWnIVtDp82jNivXKN-Z1BoqgJe-sk60DQIpEvLDA5Sj1jTu3p&_nc_ohc=q5wLbGpCiVYQ7kNvgHzuDDo&_nc_oc=Adh1LsUkQOB1mluVIMXeT4an79LbL-njIfshT9UpBTMH89fxY-ut8qfzSMDcOl_4Qdw&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=AYPpu6hbkFUY6W0QL-DjY0S&oh=00_AYAiHgbaM9QD2k68fLkMMeVl7m-V2cn9guZrdJWZrRoL_Q&oe=67B16B59" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="thumbnail" alt="Thumbnail 1">
+            <img src="https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-6/396555985_7089544967743255_1572361344609923160_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFhrvUXgVa0vk3qRAM_epfKewwDE98QLfF7DAMT3xAt8TY8udYagoLq575rz_ixZ7kN5zCDTfHmZ2YH9Ef7RuWu&_nc_ohc=LBxP7LYJ0T0Q7kNvgHqFM2v&_nc_oc=AdjOa1QRoydfscE4npzvMOG1YzECBlIdM_ZKrfOcoMb1gijaxQryOTxwvFfpnpm_Sdw&_nc_zt=23&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=Avkpy5xg0kzUXOlbvus124x&oh=00_AYCf1nLso1Gb9WS0kzhz_DwyN4dkrDDEBOOCNUmYNi5WOg&oe=67B15213" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="thumbnail" alt="Thumbnail 2">
+            <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.6435-9/72559292_2764064773613212_5029914355865485312_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExzW-GeKqxyyuMoUYWenD1oZ5Oc0kDC5uhnk5zSQMLm2TlP9TB1XQw3anDa9PX2eH6CkBrLWAQmAuv284JCoz_&_nc_ohc=Wky1fygvzt8Q7kNvgFxDSUw&_nc_oc=Adi6nzgdC1NJTTm_G00a0RSNFWHB4p_pWu9oxDsedEmgBUYOMOqJNd7ut0Ob_nBdr7w&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=AoUoeFGlcqCMpC6PTUewDf-&oh=00_AYD2VSbVobEcRL4x2tOZauRS34mGnk47nfGQ5ER9lnLGaQ&oe=67D30633" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="thumbnail" alt="Thumbnail 3">
+            <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/72402129_2764064713613218_2106212521273720832_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGxks-73BAGGq2wgZfyqDWxi1a0UWfvuj2LVrRRZ--6Pci_-iSX0Pn9YdNeq9nNmdjHMIuiDUXh3IdVlATunJ52&_nc_ohc=6clYSPJUbOEQ7kNvgEg_B7G&_nc_oc=Adj1f9VS5uEcpHxWveSVElO7l53R-edEFMEUkAmlWCrjlwZd88lGScT4wC_2qSl4g50&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AntRFnvKEI9H2QcWS53rvFn&oh=00_AYDxLse7RHPYWE4t09qmg3gIZKZRfrswcQ2QpgfhLzBNbw&oe=67D2FE01" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" class="thumbnail" alt="Thumbnail 4">
+            <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/72566206_2764064670279889_4702315819852365824_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH6eMPOCvltYcJWiPjyxfLZZ621Y8nUllBnrbVjydSWUFQP7e5kBU_OXzJE_cWukXBy4A-dtNpq6cwSF4KKAKgy&_nc_ohc=Bns2GxxCr9kQ7kNvgHhpGhx&_nc_oc=AdjmECePLpYMUlFoZEWVAUnO2yO8M6sPApEbo82yW-LQ4yda6hUOUyAGj6FiLfTBxkE&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AGCr35XMt1OvOLrzc5K6BCF&oh=00_AYBx0t1Hwe33jvxb6tFGmr_y8gHO6iHZLaAN83lnqzW9KQ&oe=67D2F358" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" class="thumbnail" alt="Thumbnail 5">
+            <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/72421849_2764064626946560_2538745986025521152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGZB8zAbF0ZsyXIBpG49gBGd92nVdo-Qjx33adV2j5CPMYLznXHY87IjnojCedMe8VOPNF4knL9ROGxumvXh99l&_nc_ohc=_rPeReYHBVQQ7kNvgHVOqXA&_nc_oc=AdgDkZ3Tz0gtsdjaHepNEKZgY0S3-t35v-XmPIWXSkq9JyOkFzK-RzDq3xqmCpp4OD8&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=Aaf5s6S5-wNTWVK5g5WY7it&oh=00_AYBjG7auT4HOmhxrCmF4D5E-Y_IlT_e8kGhtnUfge5sflw&oe=67D2F1A9" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" class="thumbnail" alt="Thumbnail 6">
+            <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/69817210_2674153562604334_7736998690249768960_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEV6yE9B2tl2zBD0rQzg2hXZ6gHOeP5kKFnqAc54_mQoaLWv7DZCZyhzFjv5vVVQrM_HE2S3JsfzfDjXq7bpG1b&_nc_ohc=5mlxNqFTK0oQ7kNvgHq2z_Q&_nc_oc=AdhjwnM2wYL-9rhetyZsIyoPt8Ve-g9AIvoW1KkAYbCMdZl7FZyNlulidZi9VMDtBgQ&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AdG9nwSgEpPRXqkPDYnR9eV&oh=00_AYBGNHo-DZzgaNmV0tVMdu8jM4IGHBkJkn2kNbvCyWeiRQ&oe=67D30194" data-bs-target="#carouselExampleControls" data-bs-slide-to="6" class="thumbnail" alt="Thumbnail 7">
+            <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.6435-9/72555140_2764064533613236_389081830373982208_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFrmNKsj5j8EwgsiMP3b3-SgfxpzDurAFiB_GnMO6sAWOjaJ2W3aeUKQ1E02u41ADEvhVVFAAlJM7us7CJsgxIV&_nc_ohc=nFpexiNTjSMQ7kNvgFyl5zJ&_nc_oc=AdhWhmrzi1hRYXiLPqu9g6sQJIP1-ibzlsfxLvKujCoVZ6Cw9yqF_UstcPiNtsbYHY0&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=AqxfDWeG9thgiTmX3LUgBrZ&oh=00_AYCIxah41OHF-RhrTpLL_bj6tSdrE7m1FM9T_gsNmiyUOQ&oe=67D30365" data-bs-target="#carouselExampleControls" data-bs-slide-to="7" class="thumbnail" alt="Thumbnail 8">
+            <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t1.6435-9/72405163_2749552015064488_8597045202416304128_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEEZZzeWRLgjlLP5T2r2VIj5X8irkICOMjlfyKuQgI4yNBLnbLIEvEqreqJDi0GNrpzkk5AFRu8L72MD16EKgr6&_nc_ohc=VyWK5o70opYQ7kNvgG5vSk8&_nc_oc=AdhOjwp5CGJiQjRiYCJgi5P0s5GG-pRQO9iOk4N7sg2J5D2zdc4ypcP3jGsIiArA790&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=A7GIQKY3gFj20iWW20z2gxo&oh=00_AYBdMsEsN4bGHbkhuHpeaGBZSS7sUqhwrrYCcJfspllZUw&oe=67D2E14C" data-bs-target="#carouselExampleControls" data-bs-slide-to="8" class="thumbnail" alt="Thumbnail 9">
+            <img src="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.6435-9/72077458_2749551945064495_9051972441965854720_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFJk-ap2x0NV4RbPA46LGXM5vJ3YQ2JAyDm8ndhDYkDIBYfyroxZH2jAV6F4JcSslGAY0-yhNLfnAqL6aLRAfto&_nc_ohc=dOyPqPm0Wr8Q7kNvgGlb4dW&_nc_oc=AdgiQFyy7l4webHVayVVJdttqDNH6m7Vp1dPYypPavSMU51VfZzxkK8b6uEJiAJqkBo&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_gid=ALZmxTmPZd-hnqX2-78Ahsc&oh=00_AYBqdytDQotiHBdMkaA6j2-bILdDIbBVyVU7lfJwIILOuA&oe=67D2DD5A" data-bs-target="#carouselExampleControls" data-bs-slide-to="9" class="thumbnail" alt="Thumbnail 10">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
